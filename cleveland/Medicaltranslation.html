@@ -33,30 +33,88 @@
 
 
     <style>
-        * {
-
-            
-
+        *{
             font-family: 'Raleway', sans-serif;
-            
-
-
         }
-
-        p {
+        p{
             letter-spacing: 0.1em;
             text-indent: 30px;
-
-
         }
+        .carousel-bg {
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+        }
+        .container-bg {
+        position: relative;
+        width: 300px; /* Set the width of the container */
+        height: 100px; /* Set the height of the container */
+        border: 1px solid #ccc; /* Add a border for visualization */
+    }
 
-      
-    </style>
+    .move-right {
+        position: relative; /* Use 'relative' for positioning within the container */
+        left: 8cqh; /* Move the span 50 pixels to the right */
+         /* Add a background color for visualization */
+    }
+
+    .move-left {
+        position: relative; /* Use 'relative' for positioning within the container */
+        left: -50px; /* Move the span 50 pixels to the left */
+         /* Add a background color for visualization */
+    }
+            .padding-top-1{
+                padding-top: 100px;
+            }
+            .typing-animation {
+                width: 0; /* Start with zero width */
+                white-space: nowrap;
+                overflow: hidden;
+                animation: typing 5s steps(30, end) forwards, blink-border 1s infinite;
+            }
+
+     @keyframes typing {
+                    to {
+                        width: 30%; /* Full width at the end of animation */
+                    }
+             }	
+             @keyframes blink-border {
+                0%, 100% {
+                    border-right: 1px solid transparent;
+                }
+                50% {
+                    border-right: 1px solid black; /* Simulate the cursor */
+                }
+     }
+             .slide-in-text {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .slide-in-text h6 {
+                    white-space: nowrap;
+                    animation: slideIn 2s ease forwards;
+            }
+
+                @keyframes slideIn {
+                        from {
+                                transform: translateX(-100%);
+                        }
+                        to {
+                                transform: translateX(0);
+                        }
+                }
+        .hoverwhite{
+            color: #034ea2!important;
+        }	
+            
+</style>
 </head>
 
 <body>
 
 <!-- START LOGO AREA -->
+<header class="main-header header-2">
 <div class="logo-area">
     <div class="auto-container">
         <div class="row">
@@ -152,7 +210,7 @@
                     <!--- END CONTAINER -->
                 </div>
                 <!-- END NAVIGATION AREA -->
-
+            
                 <!-- MOBILE-MENU-AREA START -->
                 
                 <div class="mobile-menu-area d-lg-none d-md-block d-sm-block d-block">
@@ -221,7 +279,7 @@
     </div>
 </div>
 <!-- END LOGO AREA -->			
-
+</header>
 <!-- END HEADER SECTION -->
 
     <!-- START PAGE BANNER AND BREADCRUMBS -->
