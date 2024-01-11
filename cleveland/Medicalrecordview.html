@@ -30,6 +30,8 @@
   <!-- Responsive  CSS -->
   <link rel="stylesheet" href="assets/css/responsive.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   <style>
     *{
@@ -109,6 +111,62 @@
     .hoverwhite{
         color: #034ea2!important;
     }	
+
+    
+					/*Mobile menu area*/
+
+					.mobile-container1 {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: auto;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav1 {
+  overflow: hidden;
+  background-color:#fcf3f3;
+  position: relative;
+}
+
+.topnav1 #myLinks1 {
+  display: none;
+}
+
+.topnav1 a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav1 a.icon {
+  background: whitesmoke;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav1 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: white;
+  color: white;
+}
+
+
+/*mobile dropdown menu*/
+
+#mylinks2{
+	display: none;
+	padding-left: 0.5cm;
+}
         
 </style>
 </head>
@@ -219,73 +277,59 @@
         </div>
         <!-- END NAVIGATION AREA -->
 
-        <!-- MOBILE-MENU-AREA START -->
-        
-        <div class="mobile-menu-area d-lg-none d-md-block d-sm-block d-block">
-        
-          <div class="col-md-9">
-            
-          <div class="mobile-menu">
-            
-          <nav id="dropdown">   
-          
-          <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a>
-                <!-- <ul>
-                  <li><a href="index.html">Home 1</a></li>
-                  <li><a href="index-2.html">Home 2</a></li>
-                  <li><a href="index-3.html">Home 3</a></li>
-                  <li><a href="index-4.html">Home 4</a></li>
-                </ul> -->
-              </li>
-              <li class="dropdown"><a href="services.html" class="nav-link">Services</a>
-              <!-- 	<ul>
-                  <li><a href="services.html">Our All Services</a></li>
-                  <li><a href="single-service.html">Accident & Emergency</a></li>
-                  <li><a href="single-service.html">Health checks</a></li>
-                  <li><a href="single-service.html">Home Care</a></li>
-                  <li><a href="single-service.html">Diabetes & Endocrinology</a></li>
-                </ul> -->
-                <ul class="dropdown">
-                <li><a href="MedicalBilling.html">Medical Billing</a></li>
-                <li><a href="MedicalCoding.html">Medical Coding</a></li>
-                <li><a href="MedicalTranscription.html">Medical Transcription</a></li>
-                <li><a href="MedicalScribing.html">Medical Scribing</a></li>
-                <li><a href="Medicalrecordview.html">Medical Record View</a></li>
-                <li><a href="Medicaltranslation.html">Medical Translation Service</a></li>
-              </ul> 
-              </li>	
-              <li class="nav-item ">
-                <a href="AI-Section.html" class="nav-link">
-                   AI 
-                </a>
-              </li>
-              <!-- <li><a href="gallery.html">Gallery</a></li> -->
-              <li><a href="faq.html">About US</a></li>
-              <li><a href="careers.html">Careers</a></li>
-              <!-- <li><a href="shop.html" class="nav-link">Shop</a>
-                <ul>
-                  <li><a href="shop.html">Sensiv Shop</a></li>
-                  <li><a href="single-product.html">Single Product</a></li>
-                  <li><a href="shop-checkout.html">Shop Checkout</a></li>
-                  <li><a href="shop-cart.html">Shop Cart</a></li>
-                </ul>
-              </li>	
-              <li><a href="blog.html" class="nav-link">Blog</a>
-                <ul>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="blog-single.html">Blog Single</a></li>
-                </ul>
-              </li>	 -->
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-            </div>
-          </div>
-        
-        </div>
-        </div>   
-        <!-- MOBILE-MENU-AREA END -->
+       	<!-- MOBILE-MENU-AREA START -->
+				
+				<div class=" d-lg-none ">
+							
+					<div class="mobile-container1">
+
+						<!-- Top Navigation Menu -->
+						<div class="topnav1">
+						  <a href="#home" class="active">Infotek Healthcare</a>
+						  <div id="myLinks1">
+							<a href="index.html">HOME</a>
+
+								
+								
+									<a href="#"  class="dropdown-toggle" onclick="myFunction2()">SERVICES</a>
+									<div id="mylinks2">
+										
+										<a href="MedicalBilling.html">Medical Billing</a>
+										<a href="MedicalCoding.html">Medical Coding</a>
+										<a href="MedicalTranscription.html">Medical Transcription</a>
+										<a href="MedicalScribing.html">Medical Scribing</a>
+										<a href="Medicalrecordview.html">Medical Record View</a>
+										<a href="Medicaltranslation.html">Medical Translation Service</a>
+
+
+							
+
+									
+								</div>
+								
+							
+
+							<a href="AI-Section.html">AI</a>
+							<a href="faq.html">ABOUT US</a>
+							<a href="careers.html">CAREERS</a>
+							<a href="contact.html">CONTACT</a>
+						  </div>
+						  <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+							 <i class="fa fa-bars"></i>
+						  </a>
+						  
+						</div>
+						
+						
+						</div>
+						
+
+					
+
+				</div>
+
+				
+				<!-- MOBILE-MENU-AREA END -->
       </div>
       <!-- end col -->
     </div>
@@ -517,6 +561,34 @@
   <script src="assets/js/wow.min.js"></script>
   <!-- scripts js -->
   <script src="assets/js/scripts.js"></script>
+
+
+  
+<!--mobile menu -->
+<script>
+	function myFunction1() {
+	  var x = document.getElementById("myLinks1");
+	  if (x.style.display === "block") {
+		x.style.display = "none";
+	  } else {
+		x.style.display = "block";
+	  }
+	}
+	</script>
+	
+	
+	
+<script>
+	function myFunction2() {
+	  var x = document.getElementById("mylinks2");
+	  if (x.style.display === "block") {
+		x.style.display = "none";
+	  } else {
+		x.style.display = "block";
+	  }
+	}
+	</script>
+
 </body>
 
 </html>
