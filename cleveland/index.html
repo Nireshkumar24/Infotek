@@ -2,169 +2,263 @@
 <html lang="zxx">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets2/logo.svg" />
-    <title>INFOTEK Healthcare</title>
-    <!-- Bootstrap core CSS -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Font  -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700|Raleway:400,400i,500i,600,700" rel="stylesheet"> 
-    <!-- flaticon icon -->
-    <link rel="stylesheet" href="assets/fonts/icon-font.min.css">
-    <!-- icofont icon -->
-    <link rel="stylesheet" href="assets/fonts/icofont.css">
-    <!--- meanmenu Css-->
-    <link rel="stylesheet" href="assets/css/meanmenu.min.css" media="all" />
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="assets/css/animate.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets2/logo.svg" />
+	<title>INFOTEK Healthcare</title>
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Google Font  -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700|Raleway:400,400i,500i,600,700"
+		rel="stylesheet">
+	<!-- flaticon icon -->
+	<link rel="stylesheet" href="assets/fonts/icon-font.min.css">
+	<!-- icofont icon -->
+	<link rel="stylesheet" href="assets/fonts/icofont.css">
+	<!--- meanmenu Css-->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css" media="all" />
+	<!-- animate CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
 	<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 	<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="assets/css/extralayers.css" media="screen" />
-    <!--- owl carousel Css-->
-    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
-    <!-- venobox -->
-    <link rel="stylesheet" href="assets/venobox/css/venobox.css" />
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Responsive  CSS -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-		<!-- font awesome css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--- owl carousel Css-->
+	<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+	<!-- venobox -->
+	<link rel="stylesheet" href="assets/venobox/css/venobox.css" />
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Responsive  CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- font awesome css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
 	<style>
-			.carousel-bg {
-					background-size: cover;
-					background-position: center;
-					height: 100vh;
+		* {
+			font-family: 'Roboto', 'Raleway', sans-serif;
+		}
+
+		.carousel-bg {
+			background-size: cover;
+			background-position: center;
+			height: 100vh;
+		}
+
+		.container-bg {
+			position: relative;
+			width: 300px;
+			/* Set the width of the container */
+			height: 100px;
+			/* Set the height of the container */
+			border: 1px solid #ccc;
+			/* Add a border for visualization */
+		}
+
+		.move-right {
+			position: relative;
+			/* Use 'relative' for positioning within the container */
+			left: 8cqh;
+			/* Move the span 50 pixels to the right */
+			/* Add a background color for visualization */
+		}
+
+		.move-left {
+			position: relative;
+			/* Use 'relative' for positioning within the container */
+			left: -50px;
+			/* Move the span 50 pixels to the left */
+			/* Add a background color for visualization */
+		}
+
+		.padding-top-1 {
+			padding-top: 100px;
+		}
+
+		.typing-animation {
+			width: 0;
+			/* Start with zero width */
+			white-space: nowrap;
+			overflow: hidden;
+			animation: typing 5s steps(30, end) forwards, blink-border 1s infinite;
+		}
+
+		@keyframes typing {
+			to {
+				width: 30%;
+				/* Full width at the end of animation */
 			}
-			.container-bg {
-            position: relative;
-            width: 300px; /* Set the width of the container */
-            height: 100px; /* Set the height of the container */
-            border: 1px solid #ccc; /* Add a border for visualization */
-        }
+		}
 
-        .move-right {
-            position: relative; /* Use 'relative' for positioning within the container */
-            left: 8cqh; /* Move the span 50 pixels to the right */
-             /* Add a background color for visualization */
-        }
+		@keyframes blink-border {
 
-        .move-left {
-            position: relative; /* Use 'relative' for positioning within the container */
-            left: -50px; /* Move the span 50 pixels to the left */
-             /* Add a background color for visualization */
-        }
-				.padding-top-1{
-					padding-top: 100px;
-				}
-				.typing-animation {
-					width: 0; /* Start with zero width */
-					white-space: nowrap;
-					overflow: hidden;
-					animation: typing 5s steps(30, end) forwards, blink-border 1s infinite;
-				}
+			0%,
+			100% {
+				border-right: 1px solid transparent;
+			}
 
-         @keyframes typing {
-						to {
-							width: 30%; /* Full width at the end of animation */
-						}
-				 }	
-				 @keyframes blink-border {
-					0%, 100% {
-						border-right: 1px solid transparent;
-					}
-					50% {
-						border-right: 1px solid black; /* Simulate the cursor */
-					}
-         }
-				 .slide-in-text {
-					width: 100%;
-					overflow: hidden;
-				}
+			50% {
+				border-right: 1px solid black;
+				/* Simulate the cursor */
+			}
+		}
 
-				.slide-in-text h6 {
-						white-space: nowrap;
-						animation: slideIn 2s ease forwards;
-				}
+		.slide-in-text {
+			width: 100%;
+			overflow: hidden;
+		}
 
-					@keyframes slideIn {
-							from {
-									transform: translateX(-100%);
-							}
-							to {
-									transform: translateX(0);
-							}
-					}
-			.hoverwhite{
-				color: #034ea2!important;
-			}	
-			
+		.slide-in-text h6 {
+			white-space: nowrap;
+			animation: slideIn 2s ease forwards;
+		}
+
+		@keyframes slideIn {
+			from {
+				transform: translateX(-100%);
+			}
+
+			to {
+				transform: translateX(0);
+			}
+		}
+
+		.hoverwhite {
+			color: #034ea2 !important;
+		}
+
 		/*mobile menu area*/
 
-					/*Mobile menu area*/
+		/*Mobile menu area*/
 
-					.mobile-container1 {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: auto;
-  color: white;
-  border-radius: 10px;
-}
+		.mobile-container1 {
+			max-width: 480px;
+			margin: auto;
+			background-color: #555;
+			height: auto;
+			color: white;
+			border-radius: 10px;
+		}
 
-.topnav1 {
-  overflow: hidden;
-  background-color:#fcf3f3;
-  position: relative;
-}
+		.topnav1 {
+			overflow: hidden;
+			background-color: #fcf3f3;
+			position: relative;
+		}
 
-.topnav1 #myLinks1 {
-  display: none;
-}
+		.topnav1 #myLinks1 {
+			display: none;
+		}
 
-.topnav1 a {
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
+		.topnav1 a {
+			color: black;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			display: block;
+		}
 
-.topnav1 a.icon {
-  background: whitesmoke;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+		.topnav1 a.icon {
+			background: whitesmoke;
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
 
-.topnav1 a:hover {
-  background-color: #ddd;
-  color: black;
-}
+		.topnav1 a:hover {
+			background-color: #ddd;
+			color: black;
+		}
 
-.active {
-  background-color: white;
-  color: white;
-}
+		.active {
+			background-color: white;
+			color: white;
+		}
 
 
-/*mobile dropdown menu*/
+		/*mobile dropdown menu*/
 
-#mylinks2{
-	display: none;
-	padding-left: 0.5cm;
-}
+		#mylinks2 {
+			display: none;
+			padding-left: 0.5cm;
+		}
 
-			
-				
+		.rcm-services {
+			display: flex;
+			justify-content: space-between;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		.rcm-services li {
+			flex: 1;
+			text-align: center;
+		}
+
+		.rcm-services li a {
+			display: block;
+			padding: 10px;
+			text-decoration: none;
+			color: black;
+			margin: 0 5px;
+			border: 1px outset;
+			border-radius: 6px;
+		}
+
+		.rcm-services li a:active,
+		.rcm-services li a:focus {
+			background-color: rgb(9, 9, 116);
+			color: white;
+		}
+
+		.rcm-services li a:hover {
+			background-color: rgb(9, 9, 116);
+			color: white;
+		}
+
+
+		.fa-check {
+			color: #034ea2;
+			font-size: 16px;
+			padding-top: 10px;
+		}
+
+		.contents {
+			margin-top: 20px;
+		}
+
+		.checklist {
+			list-style: none;
+			padding: 0;
+		}
+
+		.checklist li {
+			display: flex;
+			align-items: start;
+			margin-bottom: 0px;
+			line-height: 40px;
+		}
+
+		.checklist li i {
+			margin-right: 10px;
+			color: #034ea2;
+		}
+
+		.checklist li {
+			line-height: 40px;
+		}
 	</style>
-	
+
 </head>
 
 <body class="home-2">
@@ -173,124 +267,133 @@
 	<div id="page-preloader">
 		<div class="preloader-wrench"></div>
 	</div>
-	<!-- END PRELOADER --> 
-    
-	<!-- START HEADER SECTION -->
- <header class="main-header header-2">
-	<!-- START TOP AREA -->
-<!----<div class="top-area d-none d-md-block ">-->
-	<div class="top-area  d-md-block d-sm-block d-lg-block">
-		<div class="auto-container">
-			<div class="row">
+	<!-- END PRELOADER -->
 
-			<div class="col-lg-4 col-12">
-				
-					<div class="header-social">
-						<ul>
-						   <li><a href="https://www.linkedin.com/company/infotek-healthcare" target="_blank"><i class="icofont icofont-social-linkedin"></i></a></li>
-						   <!-- <li><a href="#"><i class="icofont icofont-social-twitter"></i></a></li> -->
-						   <li><a href="#"><i class="icofont icofont-social-youtube-play"></i></a></li>
-						   <!-- <li><a href="#"><i class="icofont icofont-social-pinterest"></i></a></li> -->
-						</ul>
+	<!-- START HEADER SECTION -->
+	<header class="main-header header-2">
+		<!-- START TOP AREA -->
+		<!----<div class="top-area d-none d-md-block ">-->
+		<div class="top-area  d-md-block d-sm-block d-lg-block">
+			<div class="auto-container">
+				<div class="row">
+
+					<div class="col-lg-4 col-12">
+
+						<div class="header-social">
+							<ul>
+								<li><a href="https://www.linkedin.com/company/infotek-healthcare" target="_blank"><i
+											class="icofont icofont-social-linkedin"></i></a></li>
+								<!-- <li><a href="#"><i class="icofont icofont-social-twitter"></i></a></li> -->
+								<li><a href="#"><i class="icofont icofont-social-youtube-play"></i></a></li>
+								<!-- <li><a href="#"><i class="icofont icofont-social-pinterest"></i></a></li> -->
+							</ul>
+						</div>
 					</div>
-				</div> 
-				<!-- end col -->
-			<div class="col-lg-4 col-12 text-center mb-lg-0 mb-md-0 mb-3">
-					
-					<p>INFOTEK HEALTH CARE LLP </p>
-				</div>
-				<!-- end col -->
-				<!-- <div class="col-lg-4 col-12">
+					<!-- end col -->
+					<div class="col-lg-4 col-12 text-center mb-lg-0 mb-md-0 mb-3">
+
+						<p>INFOTEK HEALTH CARE LLP </p>
+					</div>
+					<!-- end col -->
+					<!-- <div class="col-lg-4 col-12">
 					<div class="header-quote float-right">
 						<a class="header-quote-btn" href="#">Get a Quote <i class="icofont icofont-caret-right"></i></a>
 					</div>
 				</div> -->
-				<!-- end col -->
+					<!-- end col -->
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- END TOP AREA -->
+		<!-- END TOP AREA -->
 
-	<!-- START LOGO AREA -->
-	<div class="logo-area">
-		<div class="auto-container">
-			<div class="row">
-			<!----	<div class="col-lg-3 d-none d-md-block  col-md-3 col-sm-6 col-7 mx-md-auto mx-sm-auto mx-auto pl-0">-->
+		<!-- START LOGO AREA -->
+		<div class="logo-area">
+			<div class="auto-container">
+				<div class="row">
+					<!----	<div class="col-lg-3 d-none d-md-block  col-md-3 col-sm-6 col-7 mx-md-auto mx-sm-auto mx-auto pl-0">-->
 					<div class="col-lg-3  d-md-block  col-md-3 col-sm-6 col-7 mx-md-auto mx-sm-auto mx-auto pl-0">
-			 
-				<div class="logo">
-						<a href="./">
-						   <img class="img-fluid" src="assets2/logo.svg" alt="">
-						</a>
+
+						<div class="logo">
+							<a href="./">
+								<img class="img-fluid" src="assets2/logo.svg" alt="">
+							</a>
+						</div>
 					</div>
-				</div>
-				<!-- end col -->
-				<div class="col-1">
-				</div>
-				<!-- end col -->
-				<div class="col-lg-8 col-md-12 col-sm-12 col-12">
-				
-					<div class="mainmenu-area">
-						<div class="auto-container d-flex flex-row justify-content-end ">
-						<div class="d-lg-block d-md-none d-sm-none d-none "> 
-							
-								
-								<nav class="navbar navbar-expand-lg justify-content-left">
-									
-									
-									<ul class="navbar-nav">
-									<!---<li class="nav-item active ">-->
+					<!-- end col -->
+					<div class="col-1">
+					</div>
+					<!-- end col -->
+					<div class="col-lg-8 col-md-12 col-sm-12 col-12">
+
+						<div class="mainmenu-area">
+							<div class="auto-container d-flex flex-row justify-content-end ">
+								<div class="d-lg-block d-md-none d-sm-none d-none ">
+
+
+									<nav class="navbar navbar-expand-lg justify-content-left">
+
+
+										<ul class="navbar-nav">
+											<!---<li class="nav-item active ">-->
 											<li class="nav-item ">
-											<a href="index.html" class="nav-link">
-												Home
-											</a>
-										</li>
+												<a href="index.html" class="nav-link">
+													Home
+												</a>
+											</li>
 											<!-- <ul class="dropdown-menu">
 												<li><a href="index.html">Home 1</a></li>
 												<li><a href="index-2.html">Home 2</a></li>
 												<li><a href="index-3.html">Home 3</a></li>
 												<li><a href="index-4.html">Home 4</a></li>
 											</ul> -->
-									<!----	<li class="nav-item "><a href="./services" class="nav-link">Services</a> -->
-										<li class="dropdown"><a href="services.html" class="nav-link">Services</a>
-											 <ul class="dropdown-menu">
-												<!-- 	<ul>
+											<!----	<li class="nav-item "><a href="./services" class="nav-link">Services</a> -->
+											<li class="dropdown"><a href="services.html" class="nav-link">Services</a>
+												<ul class="dropdown-menu">
+													<!-- 	<ul>
 										<li><a href="services.html">Our All Services</a></li>
 										<li><a href="single-service.html">Accident & Emergency</a></li>
 										<li><a href="single-service.html">Health checks</a></li>
 										<li><a href="single-service.html">Home Care</a></li>
 										<li><a href="single-service.html">Diabetes & Endocrinology</a></li>
 									</ul> -->
-												
 
-												<li><a href="MedicalBilling.html">Medical Billing</a></li>
-												<li><a href="MedicalCoding.html">Medical Coding</a></li>
-												<li><a href="MedicalTranscription.html">Medical Transcription</a></li>
-												<li><a href="MedicalScribing.html">Medical Scribing</a></li>
-												<li><a href="Medicalrecordview.html">Medical Record View</a></li>
-												<li><a href="Medicaltranslation.html">Medical Translation Service</a></li>
-											</ul> 
-											
-										</li>	
-										<li class="nav-item ">
-                                            <a href="AI-Section.html" class="nav-link">
-                                               AI 
-                                            </a>
-                                        </li>
-										<!-- <li><a href="gallery.html" class="nav-link">Gallery</a></li> -->
-										<!-- <li class="nav-item "><a href="#" class="nav-link">Pages</a></li>	 -->
-										<li class="nav-item "><a href="faq.html" class="nav-link ">About Us</a></li>
-												<!-- <li><a href="doctors.html">Careers</a></li> -->
-										<li class="nav-item  "><a href="careers.html" class="nav-link ">Careers</a></li>
-												<!-- <li><a href="appointment.html">Appointment</a></li>
+
+													<li><a href="MedicalBilling.html">Medical Billing</a></li>
+													<li><a href="MedicalCoding.html">Medical Coding</a></li>
+													<li><a href="MedicalTranscription.html">Medical Transcription</a>
+													</li>
+													<li><a href="MedicalScribing.html">Medical Scribing</a></li>
+													<li><a href="Medicalrecordview.html">Medical Record View</a></li>
+													<li><a href="Medicaltranslation.html">Medical Translation
+															Service</a></li>
+												</ul>
+
+											</li>
+											<li class="nav-item ">
+												<a href="AI-Section.html" class="nav-link">
+													AI
+												</a>
+											</li>
+											<li class="nav-item ">
+												<a href="rcmservice.html" class="nav-link">
+													RCM Service
+												</a>
+											</li>
+											<!-- <li><a href="gallery.html" class="nav-link">Gallery</a></li> -->
+											<!-- <li class="nav-item "><a href="#" class="nav-link">Pages</a></li>	 -->
+											<li class="nav-item "><a href="faq.html" class="nav-link ">About Us</a></li>
+											<!-- <li><a href="doctors.html">Careers</a></li> -->
+											<li class="nav-item  "><a href="careers.html" class="nav-link ">Careers</a>
+											</li>
+											<!-- <li><a href="appointment.html">Appointment</a></li>
 													   <li><a href="about.html">About Us</a></li>
 												<li><a href="testimonial.html">Testimonial</a></li>
 												<li><a href="new-patient.html">New Patient</a></li>
 												
 												<li><a href="reports.html">Lab Reports</a></li>
 												<li><a href="404.html">404 Page</a></li> -->
-										
-										<!-- <li class="dropdown"><a href="shop.html" class="nav-link">Shop</a>
+
+											<!-- <li class="dropdown"><a href="shop.html" class="nav-link">Shop</a>
 											<ul class="dropdown-menu">
 												<li><a href="shop.html">Sensiv Shop</a></li>
 												<li><a href="single-product.html">Single Product</a></li>
@@ -298,38 +401,38 @@
 												<li><a href="shop-cart.html">Shop Cart</a></li>
 											</ul>
 										</li>	 -->
-										<!-- <li class="dropdown"><a href="blog.html" class="nav-link">Blog</a>
+											<!-- <li class="dropdown"><a href="blog.html" class="nav-link">Blog</a>
 											<ul class="dropdown-menu">
 												<li><a href="blog.html">Blog</a></li>
 												<li><a href="blog-single.html">Blog Single</a></li>
 											</ul>
 										</li>	 -->
-										<li><a href="contact.html" class="nav-link">Contact</a></li>
-									</ul>
-								</nav>	
+											<li><a href="contact.html" class="nav-link">Contact</a></li>
+										</ul>
+									</nav>
+								</div>
 							</div>
+							<!--- END CONTAINER -->
 						</div>
-						<!--- END CONTAINER -->
-					</div>
-					<!-- END NAVIGATION AREA -->
+						<!-- END NAVIGATION AREA -->
 
-					<!-- MOBILE-MENU-AREA START -->
-					
-					<div class=" d-lg-none ">
-							
-						<div class="mobile-container1">
+						<!-- MOBILE-MENU-AREA START -->
 
-							<!-- Top Navigation Menu -->
-							<div class="topnav1">
-							  <a href="#home" class="active">Infotek Healthcare</a>
-							  <div id="myLinks1">
-								<a href="index.html">HOME</a>
+						<div class=" d-lg-none ">
 
-									
-									
-										<a href="#"  class="dropdown-toggle" onclick="myFunction2()">SERVICES</a>
+							<div class="mobile-container1">
+
+								<!-- Top Navigation Menu -->
+								<div class="topnav1">
+									<a href="#home" class="active">Infotek Healthcare</a>
+									<div id="myLinks1">
+										<a href="index.html">HOME</a>
+
+
+
+										<a href="#" class="dropdown-toggle" onclick="myFunction2()">SERVICES</a>
 										<div id="mylinks2">
-											
+
 											<a href="MedicalBilling.html">Medical Billing</a>
 											<a href="MedicalCoding.html">Medical Coding</a>
 											<a href="MedicalTranscription.html">Medical Transcription</a>
@@ -338,162 +441,183 @@
 											<a href="Medicaltranslation.html">Medical Translation Service</a>
 
 
-								
 
-										
+
+
+										</div>
+
+
+
+										<a href="AI-Section.html">AI</a>
+										<a href="rcmservice.html">RCM service</a>
+										<a href="faq.html">ABOUT US</a>
+										<a href="careers.html">CAREERS</a>
+										<a href="contact.html">CONTACT</a>
 									</div>
-									
-								
+									<a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+										<i class="fa fa-bars"></i>
+									</a>
 
-								<a href="AI-Section.html">AI</a>
-								<a href="faq.html">ABOUT US</a>
-								<a href="careers.html">CAREERS</a>
-								<a href="contact.html">CONTACT</a>
-							  </div>
-							  <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
-								 <i class="fa fa-bars"></i>
-							  </a>
-							  
-							</div>
-							
-							
-							</div>
-							
+								</div>
 
-						
+
+							</div>
+
+
+
+
+						</div>
+
+
+
+						<!-- MOBILE-MENU-AREA END -->
 
 					</div>
-
-
-
-					<!-- MOBILE-MENU-AREA END -->
-					
+					<!-- end col -->
 				</div>
-				<!-- end col -->
 			</div>
 		</div>
-	</div>
-	<!-- END LOGO AREA -->			
-</header>
-<!-- END HEADER SECTION -->
-	
+		<!-- END LOGO AREA -->
+	</header>
+	<!-- END HEADER SECTION -->
+
 	<!-- START SLIDER SECTION -->
-    <div class="container-fluid d-none d-lg-block ">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-            </ul>
+	<div class="container-fluid d-none d-lg-block ">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ul>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="carousel-bg padding-top-1" style="background-image: url('assets2/Hero\ section\ image\ 1.svg'); height: 65vh; background-size: cover;">
-											<div class="container px-5">
-												<div>
-													<h3 class="typing-animation" style="color: #034ea2;">Innovation to Impact:</h3>
-													<h3  style="color: #034ea2;">Giving Edge to Revenue Cycle Management</h3>
-													<p class=" mt-5 mb-1 slide-in-text"style="color: #555555;"> With our Unwavering Commitment to Innovation, We Transform Revenue Cycle Management, <br> giving your Healthcare practice the Competitive edge it deserves and <br> making a tangible impact on your financial success.</p>
-												</div>	
-											</div>
-										</div>
-                </div>
-           <div class="carousel-item">
-                    <div class="carousel-bg padding-top-1 " style="background-image: url('assets2/Hero\ section\ image\ 2.svg'); height: 65vh;">
-											<div class="container px-5">
-												<div>
-													<h3 class="typing-animation" style="color: #034ea2;">Innovation to Impact:</h3>
-													<h3 style="color: #034ea2;">Giving Edge to Revenue Cycle Management</h3>
-													<p class=" mt-5 mb-1 slide-in-text"style="color: #555555;"> With our Unwavering Commitment to Innovation, We Transform Revenue Cycle Management, <br> giving your Healthcare practice the Competitive edge it deserves and <br> making a tangible impact on your financial success.</p>
-												</div>	
-											</div>
-										</div>
-                </div>
-            </div>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="carousel-bg padding-top-1"
+						style="background-image: url('assets2/Hero\ section\ image\ 1.svg'); height: 65vh; background-size: cover;">
+						<div class="container px-5">
+							<div>
+								<h3 class="typing-animation" style="color: #034ea2;">Innovation to Impact:</h3>
+								<h3 style="color: #034ea2;">Giving Edge to Revenue Cycle Management</h3>
+								<p class=" mt-5 mb-1 slide-in-text" style="color: #555555;"> With our Unwavering
+									Commitment to Innovation, We Transform Revenue Cycle Management, <br> giving your
+									Healthcare practice the Competitive edge it deserves and <br> making a tangible
+									impact on your financial success.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-bg padding-top-1 "
+						style="background-image: url('assets2/Hero\ section\ image\ 2.svg'); height: 65vh;">
+						<div class="container px-5">
+							<div>
+								<h3 class="typing-animation" style="color: #034ea2;">Innovation to Impact:</h3>
+								<h3 style="color: #034ea2;">Giving Edge to Revenue Cycle Management</h3>
+								<p class=" mt-5 mb-1 slide-in-text" style="color: #555555;"> With our Unwavering
+									Commitment to Innovation, We Transform Revenue Cycle Management, <br> giving your
+									Healthcare practice the Competitive edge it deserves and <br> making a tangible
+									impact on your financial success.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                <span class="carousel-control-prev-icon move-left"></span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                <span class="carousel-control-next-icon move-right"></span>
-            </a>
-        </div>
-    </div>
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<span class="carousel-control-prev-icon move-left"></span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<span class="carousel-control-next-icon move-right"></span>
+			</a>
+		</div>
+	</div>
 	<!-- END SLIDER SECTION  -->
 
 	<!-- Moblie START SLIDER SECTION -->
-    <div class="container-fluid d-lg-none ">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-            </ul>
+	<div class="container-fluid d-lg-none ">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ul>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="carousel-bg padding-top-1" style="background-image: url('assets2/Hero\ section\ image\ 1.svg'); height: 65vh; background-size: cover;">
-											<div class="container px-5">
-												<div>
-													<h3  style="color: #034ea2;">Innovation to Impact:</h3>
-													<h3  style="color: #034ea2;">Giving Edge to Revenue Cycle Management</h3>
-													<p class=" mt-5 mb-1 slide-in-text"style="color: #555555;"> With our Unwavering Commitment to Innovation, We Transform Revenue Cycle Management, <br> giving your Healthcare practice the Competitive edge it deserves and <br> making a tangible impact on your financial success.</p>
-												</div>	
-											</div>
-										</div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-bg padding-top-1 " style="background-image: url('assets2/Hero\ section\ image\ 2.svg'); height: 65vh;">
-											<div class="container px-5">
-												<div>
-													<h3  style="color: #034ea2;">Innovation to Impact:</h3>
-													<h3 style="color: #034ea2;">Giving Edge to Revenue Cycle Management</h3>
-													<p class=" mt-5 mb-1 slide-in-text"style="color: #555555;"> With our Unwavering Commitment to Innovation, We Transform Revenue Cycle Management, <br> giving your Healthcare practice the Competitive edge it deserves and <br> making a tangible impact on your financial success.</p>
-												</div>	
-											</div>
-										</div>
-                </div>
-            </div>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="carousel-bg padding-top-1"
+						style="background-image: url('assets2/Hero\ section\ image\ 1.svg'); height: 65vh; background-size: cover;">
+						<div class="container px-5">
+							<div>
+								<h3 style="color: #034ea2;">Innovation to Impact:</h3>
+								<h3 style="color: #034ea2;">Giving Edge to Revenue Cycle Management</h3>
+								<p class=" mt-5 mb-1 slide-in-text" style="color: #555555;"> With our Unwavering
+									Commitment to Innovation, We Transform Revenue Cycle Management, <br> giving your
+									Healthcare practice the Competitive edge it deserves and <br> making a tangible
+									impact on your financial success.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-bg padding-top-1 "
+						style="background-image: url('assets2/Hero\ section\ image\ 2.svg'); height: 65vh;">
+						<div class="container px-5">
+							<div>
+								<h3 style="color: #034ea2;">Innovation to Impact:</h3>
+								<h3 style="color: #034ea2;">Giving Edge to Revenue Cycle Management</h3>
+								<p class=" mt-5 mb-1 slide-in-text" style="color: #555555;"> With our Unwavering
+									Commitment to Innovation, We Transform Revenue Cycle Management, <br> giving your
+									Healthcare practice the Competitive edge it deserves and <br> making a tangible
+									impact on your financial success.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                <span class="carousel-control-prev-icon move-left"></span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                <span class="carousel-control-next-icon move-right"></span>
-            </a>
-        </div>
-    </div>
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<span class="carousel-control-prev-icon move-left"></span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<span class="carousel-control-next-icon move-right"></span>
+			</a>
+		</div>
+	</div>
 	<!-- MOBLIE END SLIDER SECTION  -->
 
 	<!-- START ABOUT SECTION -->
-    <section id="about" class="section-padding  pt-5">
-        <div class="container pb-0">
+	<section id="about" class="section-padding  pt-5">
+		<div class="container pb-0">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-5 pr-md-5 pr-sm-0 pr-0 mb-lg-0 mb-md-0 mb-sm-5 mb-5 about-us-into">
+				<div
+					class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-5 pr-md-5 pr-sm-0 pr-0 mb-lg-0 mb-md-0 mb-sm-5 mb-5 about-us-into">
 					<h6>A Journey of Innovation Since 2018</h6>
 					<h3>Welcome to InfoTek <br><span>Our Misson</span></h3>
-					<p>To empower healthcare providers to achieve financial excellence by delivering world-class Revenue Cycle Management (RCM) solutions tailored to the unique needs of the U.S. healthcare market. We are committed to optimizing revenue streams, reducing operational burdens, and enhancing patient care through innovation and exceptional service. </p>
+					<p>To empower healthcare providers to achieve financial excellence by delivering world-class Revenue
+						Cycle Management (RCM) solutions tailored to the unique needs of the U.S. healthcare market. We
+						are committed to optimizing revenue streams, reducing operational burdens, and enhancing patient
+						care through innovation and exceptional service. </p>
 				</div>
 				<!-- end col -->
 				<div class="col-lg-6 col-md-6 col-sm-12 col-12">
 					<div class="row">
 						<div class="col-lg-6 col-md-12 col-12 d-lg-flex flex-lg-row">
-						   <img class="img-fluid mx-2 mb-4" src="assets2/Insurance-amico.svg" alt="">
-						  <img class="img-fluid mx-2 " src="assets2/Insurance-rafiki.svg" alt="">
+							<img class="img-fluid mx-2 mb-4" src="assets2/Insurance-amico.svg" alt="">
+							<img class="img-fluid mx-2 " src="assets2/Insurance-rafiki.svg" alt="">
 						</div>
 						<!-- end col -->
-					<!-- 	<div class="col-lg-6 col-md-12 col-12 d-lg-flex flex-lg-row">
+						<!-- 	<div class="col-lg-6 col-md-12 col-12 d-lg-flex flex-lg-row">
 							<img class="img-fluid mx-4  mb-4" src="assets2/Insurance-pana.svg" alt="">
 							<img class="img-fluid mx-5 " src="assets2/Insurance-rafiki.svg" alt="">
 						</div> -->
 						<!-- end col -->
 					</div>
 				</div>
-				<!-- end col -->	
+				<!-- end col -->
 			</div>
 			<!-- <div class="row mt-5">
 				<div class="col-lg-6 col-md-6 col-12 mt-2">
@@ -521,100 +645,274 @@
 					</div>
 				</div>
 			</div>	 -->
-        </div>
-        <!--- END CONTAINER -->
-    </section>
-    <!-- END ABOUT SECTION -->
-	
+		</div>
+		<!--- END CONTAINER -->
+	</section>
+	<!-- END ABOUT SECTION -->
+
 	<!-- START SERViCE SECTION -->
-    <section id="service" class="mb-5 section-padding bg-gray">
-        <div class="container"> 
+
+
+	<!-- <section id="service" class="mb-5 section-padding bg-gray">
+		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 text-center mx-auto">
-                    <div class="section-title">
-                        <h3>Our Vision <span>And</span> Services</h3>
-                        <span class="line"></span>
-                        <p>To be the trusted partner of choice for healthcare providers, serving the U.S. market, and setting the gold standard for Revenue Cycle Management. We aspire to drive positive change in the healthcare industry by seamlessly integrating cutting-edge technology, industry expertise, and personalized service to unlock the full financial potential of our clients.</p>
-                    </div>
+					<div class="section-title">
+						<h3>Our Vision <span>And</span> Services</h3>
+						<span class="line"></span>
+						<p>To be the trusted partner of choice for healthcare providers, serving the U.S. market, and
+							setting the gold standard for Revenue Cycle Management. We aspire to drive positive change
+							in the healthcare industry by seamlessly integrating cutting-edge technology, industry
+							expertise, and personalized service to unlock the full financial potential of our clients.
+						</p>
+					</div>
 				</div>
-				<!-- end section title -->
 			</div>
-            <div class="row" ">
-				<div class="col-lg-4 col-md-6 col-sm-12 col-12">
-					<div class="service-two media" ">
-						<i class="fa-solid fa-laptop-medical " style="font-size: 68px; margin-right: 30px;"id="hover"></i>
-					  <div class="media-body">
+			<div class="row" ">
+				<div class=" col-lg-4 col-md-6 col-sm-12 col-12">
+				<div class="service-two media" ">
+						<i class=" fa-solid fa-laptop-medical " style=" font-size: 68px; margin-right: 30px;"id="hover"></i>
+					<div class="media-body">
 						<h4>Medical Billing</h4>
-						<p>Medical billing is a payment practice that involves obtaining insurance information from patients, filling forms and claims to render money for the health care services patients obtain.</p>
-					    <a class="service-two-link" href="MedicalBilling.html">Read More</a>
-					  </div>
+						<p>Medical billing is a payment practice that involves obtaining insurance information from
+							patients, filling forms and claims to render money for the health care services patients
+							obtain.</p>
+						<a class="service-two-link" href="MedicalBilling.html">Read More</a>
 					</div>
 				</div>
-				<!-- end single service -->
-				<div class="col-lg-4 col-md-6 col-sm-12 col-12">
-					<div class="service-two media">
-						<i class="fa-solid fa-file-medical  " style="font-size: 68px; margin-right: 30px; "></i>
-					  <div class="media-body">
-						<h4>Medical Transcription</h4>
-						<p>Medical Transcription is the process of converting recorded audio files of Physicians, Nurses or any other health care professionals into a text format. Transcriptionists are trained professionals</p>
-					    <a class="service-two-link" href="MedicalTranscription.html">Read More</a>
-					  </div>
-					</div>
-				</div>
-				<!-- end single service -->
-				<div class="col-lg-4 col-md-6 col-sm-12 col-12">
-					<div class="service-two media">
-						<i class="fa-solid fa-syringe"  style="font-size: 68px; margin-right: 30px;"></i>
-					  <div class="media-body">
-						<h4>Medical Scribing</h4>
-						<p>Medical Scribing is the practice of transforming Doctor’s notes, reports and important case studies into documents. Medical Scribes are persons who work as assistant to Doctors.</p>
-					    <a class="service-two-link" href="MedicalScribing.html">Read More</a>
-					  </div>
-					</div>
-				</div>
-				<!-- end single service -->
-				<div class="col-lg-4 col-md-6 col-sm-12 col-12">
-					<div class="service-two media">
-						<i class="fa-solid fa-book-medical"  style="font-size: 68px; margin-right: 30px;"></i>
-					  <div class="media-body">
-						<h4>Medical coding</h4>
-						<p>Medical Coding is the process of converting medical procedures, diagnosis, medical services and equipment details into universal medical alphanumeric codes.</p>
-					    <a class="service-two-link" href="MedicalCoding.html">Read More</a>
-					  </div>
-					</div>
-				</div>
-				<!-- end single service -->
-				<div class="col-lg-4 col-md-6 col-sm-12 col-12">
-					<div class="service-two media">
-						<i class="fa-solid fa-house-medical"  style="font-size: 68px; margin-right: 30px;"></i>
-					  <div class="media-body">
-						<h4>Medical Record Review</h4>
-						<p style="font-size: 12px;">Medical record review is the process of reviewing an individual’s medical records and other relevant information related to disease, injury mechanism.past medical and surgical history</p>
-					    <a class="service-two-link" href="Medicalrecordview.html">Read More</a>
-					  </div>
-					</div>
-				</div>
-				<!-- end single service -->
-				<div class="col-lg-4 col-md-6 col-sm-12 col-12">
-					<div class="service-two media">
-						<i class="fa-solid fa-briefcase-medical"  style="font-size: 68px; margin-right: 30px;"></i>
-					  <div class="media-body">
-						<h4>Medical Translation Service</h4>
-						<p>Medical translation is the process of transforming various medical documents like training materials, drug data sheets for health care, medical devices,</p>
-					    <a class="service-two-link" href="Medicaltranslation.html">Read More</a>
-					  </div>
-					</div>
-				</div>
-				<!-- end single service -->
 			</div>
-            <!--- END ROW -->
-        </div>
-        <!--- END CONTAINER -->
-    </section>
-    <!-- END SERViCE SECTION -->
-	
+			<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+				<div class="service-two media">
+					<i class="fa-solid fa-file-medical  " style="font-size: 68px; margin-right: 30px; "></i>
+					<div class="media-body">
+						<h4>Medical Transcription</h4>
+						<p>Medical Transcription is the process of converting recorded audio files of Physicians, Nurses
+							or any other health care professionals into a text format. Transcriptionists are trained
+							professionals</p>
+						<a class="service-two-link" href="MedicalTranscription.html">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+				<div class="service-two media">
+					<i class="fa-solid fa-syringe" style="font-size: 68px; margin-right: 30px;"></i>
+					<div class="media-body">
+						<h4>Medical Scribing</h4>
+						<p>Medical Scribing is the practice of transforming Doctor’s notes, reports and important case
+							studies into documents. Medical Scribes are persons who work as assistant to Doctors.</p>
+						<a class="service-two-link" href="MedicalScribing.html">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+				<div class="service-two media">
+					<i class="fa-solid fa-book-medical" style="font-size: 68px; margin-right: 30px;"></i>
+					<div class="media-body">
+						<h4>Medical coding</h4>
+						<p>Medical Coding is the process of converting medical procedures, diagnosis, medical services
+							and equipment details into universal medical alphanumeric codes.</p>
+						<a class="service-two-link" href="MedicalCoding.html">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+				<div class="service-two media">
+					<i class="fa-solid fa-house-medical" style="font-size: 68px; margin-right: 30px;"></i>
+					<div class="media-body">
+						<h4>Medical Record Review</h4>
+						<p style="font-size: 12px;">Medical record review is the process of reviewing an individual’s
+							medical records and other relevant information related to disease, injury mechanism.past
+							medical and surgical history</p>
+						<a class="service-two-link" href="Medicalrecordview.html">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+				<div class="service-two media">
+					<i class="fa-solid fa-briefcase-medical" style="font-size: 68px; margin-right: 30px;"></i>
+					<div class="media-body">
+						<h4>Medical Translation Service</h4>
+						<p>Medical translation is the process of transforming various medical documents like training
+							materials, drug data sheets for health care, medical devices,</p>
+						<a class="service-two-link" href="Medicaltranslation.html">Read More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section> -->
+	<!-- END SERViCE SECTION -->
+
+	<section class="container-fluid" style="padding-bottom: 40px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h3>FULL SPECTRUM REVENUE CYCLE MANAGEMENT SERVICES</h3>
+					<p>Gain optimal reimbursement across both payment structures. Mitigate compliance risks. Improve
+						medical coding efficiency.</p>
+					<p>Modular and full cycle RCM billing services.</p>
+				</div>
+				<div class="col-12" style="padding-top: 20px; font-weight: bold;">
+					<ul class="rcm-services">
+						<li><a href="#" data-content="content1">END-END RCM SERVICES</a></li>
+						<li><a href="#" data-content="content2">MEDICAL BILLING</a></li>
+						<li><a href="#" data-content="content3">MEDICAL CODING</a></li>
+						<li><a href="#" data-content="content4">AR MANAGEMENT</a></li>
+						<li><a href="#" data-content="content5">CREDENTIALING</a></li>
+					</ul>
+				</div>
+				<div class="col-12">
+					<div id="content1" class="contents">
+						<div class="row">
+							<div class="col-md-6" style="padding-left: 20px;">
+								<h5 style="padding-bottom:5px ;">Revenue Cycle Management Services</h5>
+								<p style="text-indent:0px;">Revenue cycle management services that cover a lot of
+									ground! Tighten and increase
+									the efficiency of your front-end, mid, and back-end revenue cycle.</p><br>
+								<h6>Our credentialing team:</h6>
+								<ul class="checklist" style="text-indent: 0px;">
+									<li><i class="fas fa-check"></i>Reduce cost to collect</li>
+									<li><i class="fas fa-check"></i> Work with 7 specialized RCM billing services teams
+									</li>
+									<li><i class="fas fa-check"></i> Gain a 98% first pass claim acceptance rate</li>
+									<li><i class="fas fa-check"></i>Improve net collections and drive yield improvement
+									</li>
+									<li><i class="fas fa-check"></i> Transition to value based care without revenue
+										risks</li>
+									<li><i class="fas fa-check"></i> High impact solutions to increase cash flow</li>
+									<li><i class="fas fa-check"></i> Top of the line medical billing services</li>
+									<li><i class="fas fa-check"></i> In compliance with prescribed data security
+										standards</li>
+									<li><i class="fas fa-check"></i> Lower your denial rate and increase billing
+										efficiency</li>
+
+
+
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<img src="Images/rcm/RCM.jpeg" alt="Image description" class="img-fluid w-100 h-80">
+							</div>
+						</div>
+					</div>
+					<div id="content2" class="contents" style="display: none;">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="Images/rcm/medical-billing-process.webp" alt="Image description"
+									class="img-fluid  w-100 h-100">
+							</div>
+							<div class="col-md-6">
+								<h5>Our 24/7 medical billing service offers you:</h5>
+								<p style="text-indent: 0px;">Streamline your practice with our comprehensive medical
+									billing services, ensuring timely and accurate claim submissions. Maximize your
+									revenue and focus on patient care while we handle your billing needs.</p><br>
+								<h6>Our credentialing team:</h6>
+								<ul class="checklist" style="text-indent: 0px;">
+									<li><i class="fas fa-check"></i>Maximum reimbursement of your claims</li>
+									<li><i class="fas fa-check"></i> Quick and efficient billing cycle
+									</li>
+									<li><i class="fas fa-check"></i> Significant reduction to your operational costs
+									</li>
+									<li><i class="fas fa-check"></i>Round the clock medical billing process
+									</li>
+									<li><i class="fas fa-check"></i> Scalable and customer focused billing solutions
+									</li>
+
+
+
+
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div id="content3" class="contents" style="display: none;padding-left: 20px;">
+					<div class="row">
+						<div class="col-md-6">
+							<h5>Medical Coding Services</h5><br>
+							<h6>With our medical coding services you can</h6>
+							<p style="text-indent: 0px;">Medical coding is a complex job. Our certified medical coding
+								experts, code auditors and
+								quality analysts guarantee 99.2% coding accuracy. Is your coding process on the right
+								path? Schedule a call with our medical coding and auditing expert Holly Casano to find
+								out.</p>
+							<ul class="checklist" style="text-indent: 0px;">
+								<li><i class="fas fa-check"></i>Stay compliant with NCCI regulations</li>
+								<li><i class="fas fa-check"></i> Solve coder retention and vacancy bottlenecks
+								</li>
+								<li><i class="fas fa-check"></i> Minimize coding errors and DNFB</li>
+								<li><i class="fas fa-check"></i>Improve coding throughput
+								</li>
+
+
+
+
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<img src="Images/rcm/med-code.jpeg" alt="Image description" class="img-fluid w-100 h-100">
+						</div>
+					</div>
+				</div>
+				<div id="content4" class="contents" style="display: none;padding-left: 20px;">
+					<div class="row">
+						<div class="col-md-6">
+							<h5>AR Follow Up / Calling Service</h5>
+							<h6>Power your AR management process</h6>
+
+							<ul class="checklist" style="text-indent: 5px;">
+								<li><i class="fas fa-check"></i>Are you struggling with a huge AR backlog?</li>
+								<li><i class="fas fa-check"></i> Do you want capture every billed dollar?
+								</li>
+								<li><i class="fas fa-check"></i> Is your AR follow up process a mess?
+								</li>
+							</ul><br>
+							<h6>Affordable AR calling prices</h6>
+							<p style="text-indent: 0px;">Are you tired of paying inflated AR calling bills? Whittle
+								down not just on
+								outstanding AR but AR calling costs as well. We offer both insurer and patient
+								calling services.</p>
+						</div>
+						<div class="col-md-6">
+							<img src="Images/rcm/armanagement.jpeg" alt="Image description"
+								class="img-fluid w-100 h-100">
+						</div>
+					</div>
+				</div>
+				<div id="content5" class="contents" style="display: none;padding-left: 20px;">
+					<div class="row">
+						<div class="col-md-6">
+							<h5>Provider Credentialing Services</h5>
+							<h6>Superfast credentialing services</h6>
+							<p>Our credentialing/re-credentialing team help group practices,
+								healthcare
+								organizations, and independent medical practices across the country to credential
+								effortlessly with federal, private, and workers compensation payers. We also offer
+								clearinghouse enrollment services and EDI support. Bid goodbye to downtimes and
+								lengthy credentialing processes.</p><br>
+							<h6>Our credentialing team:</h6>
+							<ul class="checklist">
+								<li><i class="fas fa-check"></i> Offer Medicare revalidation support</li>
+								<li><i class="fas fa-check"></i> Maintain your CAQH profile</li>
+								<li><i class="fas fa-check"></i> Handle managed care contracting issues</li>
+								<li><i class="fas fa-check"></i> Reduce credentialing TAT</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<img src="Images/rcm/credential.jpeg" alt="Image description" class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section><br><br>
+
+
+
 	<!-- START GALLERY SECTION -->
-   <!-- <section id="gallery" class="section-padding">
+	<!-- <section id="gallery" class="section-padding">
        <div class="auto-container"> 
 			<div class="row">
 				<div class="col-lg-7 text-center mx-auto">
@@ -757,15 +1055,15 @@
         </div>
         <!--- END CONTAINER 
     </section> -->
-    <!-- END GALLERY SECTION -->
-	
-	
+	<!-- END GALLERY SECTION -->
+
+
 	<!-- START VIDEO & FAQ -->
-  
-    <!-- END VIDEO & FAQ -->
-	
+
+	<!-- END VIDEO & FAQ -->
+
 	<!-- START DOCTOR SECTION -->
-  <!-- <section id="doctor" class="section-padding bg-gray">
+	<!-- <section id="doctor" class="section-padding bg-gray">
         <div class="container">
             <div class="row">
 				<div class="col-lg-7 text-center mx-auto">
@@ -868,16 +1166,16 @@
 			</div>
         </div>
         <!--- END CONTAINER 
-    </section> --> 
-    <!-- END DOCTOR SECTION -->
-	
+    </section> -->
+	<!-- END DOCTOR SECTION -->
+
 	<!-- START BLOG SERCTION -->
-   
-    <!-- END BLOG SERCTION -->
-	
+
+	<!-- END BLOG SERCTION -->
+
 	<!-- SINGLE DOCTOR PROMO -->
-	<div class="single-doc-promo bg-theme mt-5">
-        <div class="container">
+	<div class="single-doc-promo bg-theme mt-5" style="padding-top:20vh;">
+		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-12 col-12">
 					<div class="single-doc-promo-box-img">
@@ -886,13 +1184,15 @@
 				</div>
 				<div class="col-lg-9 col-md-9 col-sm-12 col-12">
 					<div class="single-doc-promo-box">
-						<div class="row"> 
+						<div class="row">
 							<div class="col-lg-9">
 								<div class="single-doc-promo-content">
-								     <h4 class="text-white ">Unlock Your Revenue Potential with Us!</h4>
-									 <p style="font-size: 16px;">Are you ready to revolutionize your healthcare practice's financial performance and provide better patient care? Join hands with us, your trusted RCM partner. </p>
-								</div> 
-							</div> 
+									<h4 class="text-white ">Unlock Your Revenue Potential with Us!</h4>
+									<p style="font-size: 16px;">Are you ready to revolutionize your healthcare
+										practice's financial performance and provide better patient care? Join hands
+										with us, your trusted RCM partner. </p>
+								</div>
+							</div>
 							<div class="col-lg-3 mt-2">
 								<p class="text-white m-0">Click below to get started today!</p>
 								<a href="#" class="single-doc-promo-btn fadeInUp animated my-3">Get Start</a>
@@ -904,213 +1204,242 @@
 		</div>
 	</div>
 	<!-- END SINGLE DOCTOR PROMO -->
-	
-    <!-- START FOOTER -->
-    <footer>
-        <!--Footer top -->
-        <div class="footer-top">
-            <div class="auto-container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-12  mb-lg-0 mb-md-4 mb-sm-5 mb-5 footer-widget">
-                        <div class="footer-section-title col-12 p-0 mb-4">
-                            <h5>About Us</h5>
-                        </div>
-                        <!-- end widget title -->
-                        <div class="about">
-                            <p>Infotek, a prominent player in the healthcare industry, had its humble beginnings in Vellore in August 2018. Founded and led by Gokul Nagalingam, the CEO, the company embarked on its journey with a small yet dedicated team of just 5 members. </p>
-                        </div>
-                        <div class="footer-logo mt-3">
-                            <a href="index.html">
+
+	<!-- START FOOTER -->
+	<footer>
+		<!--Footer top -->
+		<div class="footer-top">
+			<div class="auto-container">
+				<div class="row d-flex justify-content-between">
+					<div class="col-lg-3 col-md-6 col-sm-12 col-12  mb-lg-0 mb-md-4 mb-sm-5 mb-5 footer-widget">
+						<div class="footer-section-title col-12 p-0 mb-4">
+							<h5>About Us</h5>
+						</div>
+						<!-- end widget title -->
+						<div class="about">
+							<p>Infotek, a prominent player in the healthcare industry, had its humble beginnings in
+								Vellore in August 2018. Founded and led by Gokul Nagalingam, the CEO, the company
+								embarked on its journey with a small yet dedicated team of just 5 members. </p>
+						</div>
+						<div class="footer-logo mt-3">
+							<a href="index.html">
 								<div class="footer-logo-icon">
 									<img src="assets2/logo.svg" alt="">
-                                </div>
-								
+								</div>
+
 							</a>
-                        </div>
-                    </div>
-                    <!-- End Widget -->
-                    <!-- End Widget -->
-                    <!-- End Widget -->
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 footer-widget">
-                        <div class="footer-section-title col-12 p-0 mb-4">
-                            <h5>Stay With us</h5>
-                        </div>
-                        <!-- end widget title -->
+						</div>
+					</div>
+					<!-- End Widget -->
+					<!-- End Widget -->
+					<!-- End Widget -->
+					<div class="col-lg-3 col-md-6 col-sm-12 col-12 footer-widget">
+						<div class="footer-section-title col-12 p-0 mb-4">
+							<h5>Stay With us</h5>
+						</div>
+						<!-- end widget title -->
 						<ul class="quick-link-list">
 							<h6 style="color: antiquewhite;">India Office:</h6>
-							<li><a href="#"><i class="lnr lnr-map-marker"></i>No: 5, 2nd floor, Arjunan Tower, <br> Arni Road, Kamatchi Amman Kovil Back Side,<br> Sankaranpalayam, Vellore</a></li>
+							<li><a href="#"><i class="lnr lnr-map-marker"></i>No: 5, 2nd floor, Arjunan Tower, <br> Arni
+									Road, Kamatchi Amman Kovil Back Side,<br> Sankaranpalayam, Vellore</a></li>
 							<li><a href="#"><i class="lnr lnr-envelope "></i> info@infotekhealthcare.com</a></li>
-							<li><a href="#"><i class="lnr lnr-phone "></i> +91 93849 39396</a></li>	
-						<!----	<li><a href="#"><i class="icofont icofont-clock-time"></i> Open: Mon to Sat: 9AM to 5PM</a></li> -->
-						<br>
-						<h6 style="color: antiquewhite;">US Office:</h6>
-						<li><a href="#"><i class="lnr lnr-map-marker"></i> Washington DC</a></li>
-						<li><a href="#"><i class="lnr lnr-phone "></i> +12063471661</a></li>
+							<li><a href="#"><i class="lnr lnr-phone "></i> +91 93849 39396</a></li>
+							<!----	<li><a href="#"><i class="icofont icofont-clock-time"></i> Open: Mon to Sat: 9AM to 5PM</a></li> -->
+							<br>
+							<h6 style="color: antiquewhite;">US Office:</h6>
+							<li><a href="#"><i class="lnr lnr-map-marker"></i> Washington DC</a></li>
+							<li><a href="#"><i class="lnr lnr-phone "></i> +12063471661</a></li>
 						</ul>
-                        <div class="footer-section-title col-12 p-0 mt-4 mb-4">
-                            <h5>Get Connected</h5>
-                        </div>
-                        <!-- end widget title -->
+						<div class="footer-section-title col-12 p-0 mt-4 mb-4">
+							<h5>Get Connected</h5>
+						</div>
+						<!-- end widget title -->
 						<div class="footer-social">
 							<ul>
-							   <li><a href="https://www.linkedin.com/company/infotek-healthcare" target="_blank"><i class="icofont icofont-social-linkedin"></i></a></li>
-							   <li><a href="#"><i class="icofont icofont-social-youtube-play"></i></a></li>
-						</div>	
-                    </div>
-                    <!-- End Widget -->	
-                </div>
-            </div>
-        </div>
+								<li><a href="https://www.linkedin.com/company/infotek-healthcare" target="_blank"><i
+											class="icofont icofont-social-linkedin"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-social-youtube-play"></i></a></li>
+						</div>
+					</div>
+					<!-- End Widget -->
+				</div>
+			</div>
+		</div>
 		<div class="copyright">
-            <div class="auto-container">
-                <div class="row">
-                    <div class="col-12 text-center copyright-text">
-                        <p>Copyright © 2023 <a href="#"> INFOTEK</a> | All Rights Reserved</p>
-                    </div>
-                </div>
-            </div>
-        </div>	
-    </footer>
-    <!-- END FOOTER -->
-	
-	
-    <!-- Latest jQuery -->
-    <script src="assets/js/jquery-2.2.4.min.js"></script>
-    <!-- popper js -->
-    <script src="assets/bootstrap/js/popper.min.js"></script>
-    <!-- Latest compiled and minified Bootstrap -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <!-- meanmenu min js  -->
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
-    <!-- Sticky JS -->
-    <script src="assets/js/jquery.sticky.js"></script>
+			<div class="auto-container">
+				<div class="row">
+					<div class="col-12 text-center copyright-text">
+						<p>Copyright © 2023 <a href="#"> INFOTEK</a> | All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
+
+
+	<!-- Latest jQuery -->
+	<script src="assets/js/jquery-2.2.4.min.js"></script>
+	<!-- popper js -->
+	<script src="assets/bootstrap/js/popper.min.js"></script>
+	<!-- Latest compiled and minified Bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- meanmenu min js  -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- Sticky JS -->
+	<script src="assets/js/jquery.sticky.js"></script>
 	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
 	<script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
 	<script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 	<!-- gijgo js  -->
-    <script src="assets/js/gijgo.js"></script>
-    <!-- owl-carousel min js  -->
-    <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
-    <!-- jquery appear js  -->
-    <script src="assets/js/jquery.appear.js"></script>
-    <!-- countTo js -->
-    <script src="assets/js/jquery.inview.min.js"></script>
-    <!-- jquery mixitup js -->
-    <script src="assets/js/jquery.mixitup.min.js"></script>
-    <!-- venobox js -->
-    <script src="assets/venobox/js/venobox.min.js"></script>
-    <!-- scrolltopcontrol js -->
-    <script src="assets/js/scrolltopcontrol.js"></script>
-    <!-- WOW - Reveal Animations When You Scroll -->
-    <script src="assets/js/wow.min.js"></script>
-    <!-- scripts js -->
-    <script src="assets/js/scripts.js"></script>
-	
-    <script>
-            jQuery(document).ready(function() {			
-            	jQuery('.tp-banner').show().revolution(
-            	{
-            		dottedOverlay:"none",
-            		delay:16000,
-            		startwidth:1170,
-            		startheight:550,
-            		hideThumbs:200,
-            		
-            		thumbWidth:100,
-            		thumbHeight:50,
-            		thumbAmount:5,
-            		
-            		navigationType:"bullet",
-            		navigationArrows:"solo",
-            		navigationStyle:"preview4",
-            		
-            		touchenabled:"on",
-            		onHoverStop:"on",
-            		
-            		swipe_velocity: 0.7,
-            		swipe_min_touches: 1,
-            		swipe_max_touches: 1,
-            		drag_block_vertical: false,
-            								
-            		parallax:"mouse",
-            		parallaxBgFreeze:"on",
-            		parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
-            								
-            		keyboardNavigation:"off",
-            		
-            		navigationHAlign:"center",
-            		navigationVAlign:"bottom",
-            		navigationHOffset:0,
-            		navigationVOffset:20,
-            
-            		soloArrowLeftHalign:"left",
-            		soloArrowLeftValign:"center",
-            		soloArrowLeftHOffset:20,
-            		soloArrowLeftVOffset:0,
-            
-            		soloArrowRightHalign:"right",
-            		soloArrowRightValign:"center",
-            		soloArrowRightHOffset:20,
-            		soloArrowRightVOffset:0,
-            				
-            		shadow:0,
-            		fullWidth:"on",
-            		fullScreen:"off",
-            
-            		spinner:"spinner4",
-            		
-            		stopLoop:"off",
-            		stopAfterLoops:-1,
-            		stopAtSlide:-1,
-            
-            		shuffle:"off",
-            		
-            		autoHeight:"off",						
-            		forceFullWidth:"off",						
-            									
-            								
-            		hideThumbsOnMobile:"off",
-            		hideNavDelayOnMobile:1500,						
-            		hideBulletsOnMobile:"off",
-            		hideArrowsOnMobile:"off",
-            		hideThumbsUnderResolution:0,
-            		
-            		hideSliderAtLimit:0,
-            		hideCaptionAtLimit:0,
-            		hideAllCaptionAtLilmit:0,
-            		startWithSlide:0,
-            		fullScreenOffsetContainer: ""	
-            	});				
-            });	//ready
-            
-       </script>
+	<script src="assets/js/gijgo.js"></script>
+	<!-- owl-carousel min js  -->
+	<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+	<!-- jquery appear js  -->
+	<script src="assets/js/jquery.appear.js"></script>
+	<!-- countTo js -->
+	<script src="assets/js/jquery.inview.min.js"></script>
+	<!-- jquery mixitup js -->
+	<script src="assets/js/jquery.mixitup.min.js"></script>
+	<!-- venobox js -->
+	<script src="assets/venobox/js/venobox.min.js"></script>
+	<!-- scrolltopcontrol js -->
+	<script src="assets/js/scrolltopcontrol.js"></script>
+	<!-- WOW - Reveal Animations When You Scroll -->
+	<script src="assets/js/wow.min.js"></script>
+	<!-- scripts js -->
+	<script src="assets/js/scripts.js"></script>
 
-<!--mobile menu -->
-<script>
-	function myFunction1() {
-	  var x = document.getElementById("myLinks1");
-	  if (x.style.display === "block") {
-		x.style.display = "none";
-	  } else {
-		x.style.display = "block";
-	  }
-	}
+
+
+	<script>
+		jQuery(document).ready(function () {
+			jQuery('.tp-banner').show().revolution(
+				{
+					dottedOverlay: "none",
+					delay: 16000,
+					startwidth: 1170,
+					startheight: 550,
+					hideThumbs: 200,
+
+					thumbWidth: 100,
+					thumbHeight: 50,
+					thumbAmount: 5,
+
+					navigationType: "bullet",
+					navigationArrows: "solo",
+					navigationStyle: "preview4",
+
+					touchenabled: "on",
+					onHoverStop: "on",
+
+					swipe_velocity: 0.7,
+					swipe_min_touches: 1,
+					swipe_max_touches: 1,
+					drag_block_vertical: false,
+
+					parallax: "mouse",
+					parallaxBgFreeze: "on",
+					parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+
+					keyboardNavigation: "off",
+
+					navigationHAlign: "center",
+					navigationVAlign: "bottom",
+					navigationHOffset: 0,
+					navigationVOffset: 20,
+
+					soloArrowLeftHalign: "left",
+					soloArrowLeftValign: "center",
+					soloArrowLeftHOffset: 20,
+					soloArrowLeftVOffset: 0,
+
+					soloArrowRightHalign: "right",
+					soloArrowRightValign: "center",
+					soloArrowRightHOffset: 20,
+					soloArrowRightVOffset: 0,
+
+					shadow: 0,
+					fullWidth: "on",
+					fullScreen: "off",
+
+					spinner: "spinner4",
+
+					stopLoop: "off",
+					stopAfterLoops: -1,
+					stopAtSlide: -1,
+
+					shuffle: "off",
+
+					autoHeight: "off",
+					forceFullWidth: "off",
+
+
+					hideThumbsOnMobile: "off",
+					hideNavDelayOnMobile: 1500,
+					hideBulletsOnMobile: "off",
+					hideArrowsOnMobile: "off",
+					hideThumbsUnderResolution: 0,
+
+					hideSliderAtLimit: 0,
+					hideCaptionAtLimit: 0,
+					hideAllCaptionAtLilmit: 0,
+					startWithSlide: 0,
+					fullScreenOffsetContainer: ""
+				});
+		});	//ready
+
 	</script>
-	
-	
-	
-<script>
-	function myFunction2() {
-	  var x = document.getElementById("mylinks2");
-	  if (x.style.display === "block") {
-		x.style.display = "none";
-	  } else {
-		x.style.display = "block";
-	  }
-	}
+
+	<!--mobile menu -->
+	<script>
+		function myFunction1() {
+			var x = document.getElementById("myLinks1");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
 	</script>
 
 
+
+	<script>
+		function myFunction2() {
+			var x = document.getElementById("mylinks2");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
+
+	<script>document.addEventListener("DOMContentLoaded", function () {
+			var links = document.querySelectorAll(".rcm-services a");
+			var contents = document.querySelectorAll(".contents");
+
+			links.forEach(function (link) {
+				link.addEventListener("click", function (event) {
+					event.preventDefault();
+					var targetContentId = this.getAttribute("data-content");
+					var targetContent = document.getElementById(targetContentId);
+
+					// Hide all content divs
+					contents.forEach(function (content) {
+						content.style.display = "none";
+					});
+
+					// Show the target content
+					if (targetContent) {
+						targetContent.style.display = "block";
+					}
+				});
+			});
+		});
+
+	</script>
 </body>
 
 </html>
