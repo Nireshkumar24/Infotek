@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="shortcut icon" type="image/x-icon" href="assets2/logo.svg" />
-    <title>RCM Services</title>
+    <title>INFOTEK Healthcare</title>
     <!-- Bootstrap core CSS -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Font  -->
@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="assets/css/meanmenu.min.css" media="all" />
     <!-- animate CSS -->
     <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/css/extralayers.css" media="screen" />
     <!--- owl carousel Css-->
     <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
@@ -29,7 +32,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Responsive  CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -37,19 +40,12 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <style>
         * {
             font-family: 'Roboto', 'Raleway', sans-serif;
-        }
-
-        p {
-            /* letter-spacing: 0.1em; */
-            text-indent: 30px;
         }
 
         .carousel-bg {
@@ -112,6 +108,7 @@
 
             50% {
                 border-right: 1px solid black;
+                /* Simulate the cursor */
             }
         }
 
@@ -138,6 +135,8 @@
         .hoverwhite {
             color: #034ea2 !important;
         }
+
+        /*mobile menu area*/
 
         /*Mobile menu area*/
 
@@ -194,24 +193,39 @@
             padding-left: 0.5cm;
         }
 
-        .container {
-            padding-bottom: 20px;
-            padding-top: 40px;
+        .rcm-services {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            list-style-type: none;
         }
 
-        .hospital,
-        .billing,
-        .independent {
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
+        .rcm-services li {
+            flex: 1;
+            text-align: center;
+        }
+
+        .rcm-services li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
             color: black;
+            margin: 0 5px;
+            border: 1px outset;
+            border-radius: 6px;
         }
 
-
-        .breadcrumb-item a {
-            color: inherit;
+        .rcm-services li a:active,
+        .rcm-services li a:focus {
+            background-color: rgb(9, 9, 116);
+            color: white;
         }
+
+        .rcm-services li a:hover {
+            background-color: rgb(9, 9, 116);
+            color: white;
+        }
+
 
         .fa-check {
             color: #034ea2;
@@ -219,22 +233,8 @@
             padding-top: 10px;
         }
 
-        p {
-            font-size: medium;
-            line-height: 30px;
-            color: #333333;
-            text-indent: 0%;
-
-        }
-
-        ul li {
-            font-size: medium;
-            line-height: 40px;
-            color: #666666;
-        }
-
-        h5 {
-            color: #6699CC;
+        .contents {
+            margin-top: 20px;
         }
 
         .checklist {
@@ -246,23 +246,29 @@
             display: flex;
             align-items: start;
             margin-bottom: 0px;
+            line-height: 40px;
         }
 
         .checklist li i {
             margin-right: 10px;
             color: #034ea2;
         }
+
+        .checklist li {
+            line-height: 40px;
+        }
     </style>
 
 </head>
 
-<body>
+<body class="home-2">
+
     <!-- START PRELOADER -->
     <div id="page-preloader">
         <div class="preloader-wrench"></div>
     </div>
     <!-- END PRELOADER -->
-    <!-- START LOGO AREA -->
+
     <!-- START HEADER SECTION -->
     <header class="main-header header-2">
         <!-- START TOP AREA -->
@@ -473,175 +479,8 @@
         </div>
         <!-- END LOGO AREA -->
     </header>
-
-
-    <div class="container-fluid">
-        <section class="single-page-title-area" data-background="assets/img/bg/heading.png">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-12">
-                        <div class="single-page-title">
-                            <h2>Our Services</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html"><span class="lnr lnr-home"></span></a></li>
-                            <li class="breadcrumb-item">Services</li>
-                            <li class="breadcrumb-item active">RCM Services</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Main Container -->
-    <div class="container">
-        <div class="row">
-            <!-- Hospital Section -->
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-8 d-flex">
-                        <div class="hospital">
-                            <h5>Revenue Management Service For Hospitals</h5>
-                            <p>Are you working off your feet? Complete revenue cycle management and
-                                operational support
-                                that is built from the ground up for you.</p><br>
-                            <div class="content">
-                                <h6>Overcome financial and operational challenges</h6>
-                                <ul class="checklist">
-
-                                    <li><i class="fas fa-check"></i> Medical coding, auditing, and compliance services
-                                        by
-                                        AHIMA/AAPC certified experts</li>
-                                    <li><i class="fas fa-check"></i> Resolution of underpayments arising due to contract
-                                        or
-                                        documentation issues</li>
-                                    <li><i class="fas fa-check"></i> Close coordination with the centralized billing
-                                        office
-                                        (CBO) to quicken tasks</li>
-                                    <li><i class="fas fa-check"></i> Patient financial services and CDI support provided
-                                    </li>
-                                    <li><i class="fas fa-check"></i> Workflow and system management solutions to ensure
-                                        your
-                                        claims submission process is in line with payer compliance updates</li>
-                                </ul>
-                                <p>With our revenue cycle management services, your hospital will receive consistent
-                                    paymentsand maximum reimbursement. Learn more and receive tailored advice on how to
-                                    stop cash flowfluctuations. With the help of our denial and AR management tools,
-                                    your group
-                                    practice can avoid further denials, make up lost revenue, and release funds that
-                                    have accumulated in outdated AR.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex">
-                        <img src="Images/rcm/hospital.jpeg" alt=""
-                            class="img-fluid justify-content-center align-items-center"
-                            style="padding-top: 20px; height: auto;width: auto;">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Billing Section -->
-            <div class="col-md-12" style="padding-top:30px;">
-                <div class="row">
-                    <div class="col-md-4 d-flex" style="padding-top: 20px;">
-                        <img src="Images/rcm/med-group.jpeg" alt=""
-                            class="img-fluid justify-content-center align-items-center"
-                            style="height: auto;width: auto;">
-                    </div>
-                    <div class="col-md-8 d-flex">
-                        <div class="billing">
-                            <h5>Medical Group Billing Services</h5>
-                            <p>We offer group practice billing in addition to medical billing for doctors. Let us handle
-                                your
-                                medical group billing's revenue cycle optimisation while you concentrate on patient
-                                care.</p><br>
-                            <div class="content">
-                                <h6>Overcome financial and operational challenges for your medical group billing</h6>
-                                <ul class="checklist">
-                                    <li><i class="fas fa-check"></i> Denial management services to help group practices
-                                        reduce
-                                        denials below 10%.</li>
-                                    <li><i class="fas fa-check"></i> Medical coding, auditing, and compliance services
-                                        by
-                                        AHIMA/AAPC certified experts</li>
-                                    <li><i class="fas fa-check"></i> Resolution of underpayments arising due to contract
-                                        or
-                                        (CDI) documentation issues</li>
-                                    <li><i class="fas fa-check"></i> Medical group billing with the centralized billing
-                                        office
-                                        (CBO) to quicken tasks</li>
-                                    <li><i class="fas fa-check"></i> Patient billing collection services for group
-                                        practice
-                                        billing</li>
-                                    <li><i class="fas fa-check"></i> Workflow management system to ensure your claims
-                                        submission
-                                        process is in line with payer compliance updates</li>
-                                </ul>
-                                <p>With our group practice billing services, you can get the most out of your
-                                    reimbursement and
-                                    steady payments for your whole hospital. Learn more and receive tailored advice on
-                                    how to
-                                    avoid fluctuations in cash flow.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Independent Physician Section -->
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-8 d-flex">
-                    <div class="independent">
-                        <h5>Independent Physician Medical Billing Services</h5>
-                        <p>Medical billing services to support healthy cash flow and overall revenue growth for
-                            specialty
-                            and independent medical practices.</p><br>
-                        <div class="content">
-                            <h6>Increase Efficiency & Revenue with End-to-End independent Physician Billing Services
-                            </h6>
-                            <p>The main problem in a solo practice could be human resources, as they could not have
-                                sufficient knowledge of the entire billing procedure. Even if you are successful in
-                                hiring,
-                                the wage requirement can exceed your means. Aside from this significant issue, there are
-                                numerous additional problems and queries, which is why so many doctors have been
-                                contacting
-                                us:</p>
-                            <ul class="checklist">
-                                <li><i class="fas fa-check"></i> Why my practice is getting frequent denials?</li>
-                                <li><i class="fas fa-check"></i> How to avert federal policy infringement penalties?
-                                </li>
-                                <li><i class="fas fa-check"></i> What makes my bad-debt management go out-of-kilter?
-                                </li>
-                                <li><i class="fas fa-check"></i> What are the impeding factors against my
-                                    techno-clinical
-                                    workflow?</li>
-                                <li><i class="fas fa-check"></i> Patient billing collection services for group practice
-                                    billing</li>
-                                <li><i class="fas fa-check"></i> Is it good to go with my current EMR/ EHR (electronic
-                                    medical/ health record)?</li>
-                            </ul>
-                            <p>Give us your questions; we'll examine your work closely, help you see the changes via our
-                                expertise, and make you happy. "With technology, dedication and expertise we track every
-                                single dollar of your medical insurance claims and get you maximum reimbursements
-                                on-time".
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" style="padding-top: 20px;">
-                    <img src="Images/rcm/doctors.jpeg" alt=""
-                        class="img-fluid justify-content-center align-items-center" style="height: auto;width: auto;">
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- END HEADER SECTION -->
+    <!-- START FOOTER -->
     <footer>
         <!--Footer top -->
         <div class="footer-top">
@@ -674,15 +513,14 @@
                             <h5>Stay With us</h5>
                         </div>
                         <!-- end widget title -->
-                        <ul class="quick-link-list ">
+                        <ul class="quick-link-list">
                             <h6 style="color: antiquewhite;">India Office:</h6>
                             <li><a href="#"><i class="lnr lnr-map-marker"></i>No: 5, 2nd floor, Arjunan Tower, <br> Arni
                                     Road, Kamatchi Amman Kovil Back Side,<br> Sankaranpalayam, Vellore</a></li>
                             <li><a href="#"><i class="lnr lnr-envelope "></i> info@infotekhealthcare.com</a></li>
                             <li><a href="#"><i class="lnr lnr-phone "></i> +91 93849 39396</a></li>
-                            <hr>
-                            <!----  <li><a href="#"><i class="icofont icofont-clock-time"></i> Open: Mon to Sat: 9AM to
-                                    5PM</a></li>-->
+                            <!----	<li><a href="#"><i class="icofont icofont-clock-time"></i> Open: Mon to Sat: 9AM to 5PM</a></li> -->
+                            <br>
                             <h6 style="color: antiquewhite;">US Office:</h6>
                             <li><a href="#"><i class="lnr lnr-map-marker"></i> Washington DC</a></li>
                             <li><a href="#"><i class="lnr lnr-phone "></i> +12065121398</a></li>
@@ -714,6 +552,7 @@
     </footer>
     <!-- END FOOTER -->
 
+
     <!-- Latest jQuery -->
     <script src="assets/js/jquery-2.2.4.min.js"></script>
     <!-- popper js -->
@@ -724,6 +563,9 @@
     <script src="assets/js/jquery.meanmenu.min.js"></script>
     <!-- Sticky JS -->
     <script src="assets/js/jquery.sticky.js"></script>
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <!-- gijgo js  -->
     <script src="assets/js/gijgo.js"></script>
     <!-- owl-carousel min js  -->
@@ -743,6 +585,86 @@
     <!-- scripts js -->
     <script src="assets/js/scripts.js"></script>
 
+
+
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.tp-banner').show().revolution(
+                {
+                    dottedOverlay: "none",
+                    delay: 16000,
+                    startwidth: 1170,
+                    startheight: 550,
+                    hideThumbs: 200,
+
+                    thumbWidth: 100,
+                    thumbHeight: 50,
+                    thumbAmount: 5,
+
+                    navigationType: "bullet",
+                    navigationArrows: "solo",
+                    navigationStyle: "preview4",
+
+                    touchenabled: "on",
+                    onHoverStop: "on",
+
+                    swipe_velocity: 0.7,
+                    swipe_min_touches: 1,
+                    swipe_max_touches: 1,
+                    drag_block_vertical: false,
+
+                    parallax: "mouse",
+                    parallaxBgFreeze: "on",
+                    parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+
+                    keyboardNavigation: "off",
+
+                    navigationHAlign: "center",
+                    navigationVAlign: "bottom",
+                    navigationHOffset: 0,
+                    navigationVOffset: 20,
+
+                    soloArrowLeftHalign: "left",
+                    soloArrowLeftValign: "center",
+                    soloArrowLeftHOffset: 20,
+                    soloArrowLeftVOffset: 0,
+
+                    soloArrowRightHalign: "right",
+                    soloArrowRightValign: "center",
+                    soloArrowRightHOffset: 20,
+                    soloArrowRightVOffset: 0,
+
+                    shadow: 0,
+                    fullWidth: "on",
+                    fullScreen: "off",
+
+                    spinner: "spinner4",
+
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+
+                    shuffle: "off",
+
+                    autoHeight: "off",
+                    forceFullWidth: "off",
+
+
+                    hideThumbsOnMobile: "off",
+                    hideNavDelayOnMobile: 1500,
+                    hideBulletsOnMobile: "off",
+                    hideArrowsOnMobile: "off",
+                    hideThumbsUnderResolution: 0,
+
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    startWithSlide: 0,
+                    fullScreenOffsetContainer: ""
+                });
+        });	//ready
+
+    </script>
 
     <!--mobile menu -->
     <script>
@@ -767,6 +689,31 @@
                 x.style.display = "block";
             }
         }
+    </script>
+
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            var links = document.querySelectorAll(".rcm-services a");
+            var contents = document.querySelectorAll(".contents");
+
+            links.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    var targetContentId = this.getAttribute("data-content");
+                    var targetContent = document.getElementById(targetContentId);
+
+                    // Hide all content divs
+                    contents.forEach(function (content) {
+                        content.style.display = "none";
+                    });
+
+                    // Show the target content
+                    if (targetContent) {
+                        targetContent.style.display = "block";
+                    }
+                });
+            });
+        });
+
     </script>
 </body>
 
